@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Browser Experimental</title>
+</head>
+<body>
+    
+
+ <script>
+
+    //obheto
+    var aba1 = {
+        titulo: 'Mario Souto',
+        url: 'https://omariosouto.github.io/'
+    };
+
+    var aba2 = {
+        titulo: 'Google',
+        url: 'https://www.google.com/'
+    };
+
+    var aba3 = {
+        titulo: 'Msn',
+        url: 'https://www.msn.com/pt-br'
+    };
+    //Entradas
+    //Arrays: Listas de coisas
+     const abas = [
+        aba1,
+        aba2,
+        aba3,
+    ];
+    
+    //Processamento
+
+    for(aba of abas) {
+        console.log(aba.titulo);
+          // OUTPUT
+        var valorAtualDoHtml = document.body.innerHTML;
+        document.body.innerHTML = valorAtualDoHtml + `<li><a href="${aba.url}"> ${aba.titulo}<a/></lin>`;
+    }
+ 
+
+
+    //document.body.innerHTML = 'Hello';
+   
+    //O que tem em uma aba
+    // titulo
+    //url
+    //pagina de fato (html, css, javascript)
+ </script>
+
+ </body>
+ </html>
+ 
